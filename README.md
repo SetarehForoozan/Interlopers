@@ -43,9 +43,9 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   This is the main file to run. 
   running this in your terminal:
   
-  
-  $python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
-  
+  '''
+  python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  '''
   
   nsim:
     The number of simulations (exapmle files are 1000)
@@ -82,6 +82,9 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   + Everything is stored in "./Interlopers/rsd_97/**multi**_case8_1000sims"
   + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
 
+  '''
+  python3 ./Interlopers/codes/fit_multi.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  '''
 
 For questions you can email me: s2forooz@uwaterloo.ca
   

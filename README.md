@@ -1,13 +1,26 @@
 # Interlopers-in-BAO
 
-If you store this is some folder called /STORING_ADRESS, then 
+Cloning this project would creat a folder called ./Interlopers, consisting of two examplary folders called "rsd_97" and "norsd_85" and a folder called "codes". If you measure your own correlation functions, you need to create another folder here and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders: (In the following we assumed frac_2 and d = 97 Mpc/h)
 
-This project consist of these files:
+### "rsd_97"
+1- CovMats: 
+  covmat_multi_t_frac_2_nsim1000_0to999.txt: the measured covariance matrix of monopole+quadrupole for fraction 2 and 1000 sims
+  covmat_t_frac_2_nsim1000.txt: the measured covariance of monopole for fraction 2 and 1000 simulations
+
+2- mean0to999 (sim 0 to sim 999):
+  + poles_t_frac_2.txt: First column must be r, second, third, and forth columns are monopole, quadrupole and hexadecapoles of the measured correlation function.
+  + xi_cross_L0_d97_frac2.txt: First column is r, second column is calculated monopole of the cross correlation from the convolution of the auto correlation, and third column is its error bar.
+  + xi_cross_L2_d97_frac2.txt: Same as above, but for quadupole of the cross correlation.
+3- Other folders will be created here as soon as you run the code. (Will be described later on)
+
+  
+### "codes"
+This folder consist of the codes to fit BAO to the above-mentioned contaminated correlation functions:
 
 1- default_config:
+
   Includes fitting parameters and cosmology parameters used when generating the correlation functions. You can change these parameters according to your correlation functions and the fitting parameters you want to use.
   
- 
 2- fitting_params.py:
 
   Takes some of the simulation and fitting parameters from you to use in the main code
@@ -16,21 +29,21 @@ This project consist of these files:
   
   Contains all functions needed for monopole only fit
   
- 4- quad_functions.py:
+4- quad_functions.py:
 
   contains all functions needed for mono+quad fit
   
- 5- fitting_mono.py:
+5- fit_mono.py:
  
   This is the main file to run. 
-  Enter:
-  # STORING_ADRESS/codes/new_fitting_codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  running this in your terminal:
+  Python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
   
   nsim:
-    The number of simulations
+    The number of simulations (exapmle files are 1000)
   case:
     0: no correction
-    1: cross term measured directly from the simulations
+    1: cross term measured directly from the simulations (not active now)
     8: cross term is calculated from the convolution of the contaminated auto correlation. (Needs to be divided by a prefactor which is a function of fi,         that will be fitted in MCMC)
   A:
     Is the interloper displacement in Mpc/h
@@ -47,21 +60,23 @@ This project consist of these files:
     Whether or not measured in redshift space ot real space. for redshift space use "rsd", for real space use "norsd".
     
   The output of this code for example for rsd = "rsd" and A = "97", case = 8, 1000 sims, frac = 2, dega = 3, would be stored in this folder
-  STORING_ADRESS/codes/rsd_97/mono_case8_1000sims_Percival
+  ./Interlopers/rsd_97/mono_case8_1000sims
   
-  There are three types of files that this code stores:
-  1- A pdf file called frac2_dega3_sims0to999.pdf: Contains the visualizations. 
+  There are three types of files that this code stores in this location:
+  + ./frac2_dega3_sims0to999.pdf: Contains the visualizations in a pdf file. 
  
-  2- AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: These contain the average and standard deviations calculated from the best      fit MCMC code. The numbers stored are a1, a2, a3, b, alpha, fi, respectively.
+  + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: These contain the average and standard deviations calculated from the best fit MCMC code. The numbers stored are a1, a2, a3, b, alpha, fi, respectively.
  
-  3- paper/FINAL_frac2_dega3_dega3_sims0to999.txt: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number     is reduced xi^2
+  + ./paper/FINAL_frac2_dega3_dega3_sims0to999.txt: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number is reduced xi^2
   
+6- fit_multi.py:
+
+  This is very similar to above, with the following changes:
   
-  
-  
-  
-  
-  
-    
+  + Everything is stored in "./Interlopers/rsd_97/**multi**_case8_1000sims"
+  + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
+
+
+
   
   

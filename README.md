@@ -42,7 +42,10 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
  
   This is the main file to run. 
   running this in your terminal:
-  Python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  
+  
+  python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  
   
   nsim:
     The number of simulations (exapmle files are 1000)

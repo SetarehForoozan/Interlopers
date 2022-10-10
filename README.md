@@ -33,7 +33,12 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
 
   contains all functions needed for mono+quad fit
   
-5- fit_mono.py:
+5- make_covmat.py:
+
+  There are two functions here just to adjust the fitting range of covariance matrices. The size of your saved multipole covariance matrix is [rmin to rmax + rmin to rmax]. But you need to change this to [rfitmin to rfitmax + rfitmin to rfitmax]. 
+  
+
+6- fit_mono.py: (main code for monolope only)
  
   This is the main file to run. 
   running this in your terminal:
@@ -67,7 +72,7 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
  
   + ./paper/FINAL_frac2_dega3_dega3_sims0to999.txt: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number is reduced xi^2
   
-6- fit_multi.py:
+7- fit_multi.py: (main code for mono+quad)
 
   This is very similar to above, with the following changes:
   
@@ -75,6 +80,6 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
 
 
-
+For questions you can email me: s2forooz@uwaterloo.ca
   
   

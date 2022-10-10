@@ -49,11 +49,9 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
     Is the interloper displacement in Mpc/h
     
   frac:
-  
     This is the true fraction of interlopers, used just for reading the catalogues that are contaminated by fraction "frac".
     
   dof_a, dof_q:
-  
     Polynomials that need to be used in monopole, and quadrupole respectively. Usually chosen from 1,2,3.
     
   rsd:

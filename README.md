@@ -1,4 +1,6 @@
-# Interlopers-in-BAO
+# Interlopers in BAO 
+This code is used for generating results of https://arxiv.org/abs/2208.05001.
+
 
 Cloning this project would creat a folder called ./Interlopers, consisting of two examplary folders called "rsd_97" and "norsd_85" and a folder called "codes". If you measure your own correlation functions, you need to create another folder here and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders: (In the following we assumed frac_2 and d = 97 Mpc/h)
 

@@ -7,6 +7,7 @@ Cloning this project would create a folder called ./Interlopers, consisting of t
 ### "rsd_97"
 1- CovMats: 
   covmat_multi_t_frac_2_nsim1000_0to999.txt: the measured covariance matrix of monopole+quadrupole for fraction 2 and 1000 sims
+  
   covmat_t_frac_2_nsim1000.txt: the measured covariance of monopole for fraction 2 and 1000 simulations
 
 2- mean0to999 (sim 0 to sim 999):

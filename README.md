@@ -4,7 +4,7 @@ This code is used for generating the results of https://arxiv.org/abs/2208.05001
 
 Cloning this project would create a folder called ./Interlopers, consisting of two examplary folders called "rsd_97" and "norsd_85" and a folder called "codes". If you measure your own correlation functions, you need to create another folder here and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders such as ones in rsd_97 below: (In the following we assumed frac_2 and d = 97 Mpc/h)
 
-## "rsd_97"
+## rsd_97
 1- CovMats: 
   
   + covmat_multi_t_frac_2_nsim1000_0to999.txt: the measured covariance matrix of monopole+quadrupole for fraction 2 and 1000 sims
@@ -18,7 +18,7 @@ Cloning this project would create a folder called ./Interlopers, consisting of t
 3- Other folders will be created here as soon as you run the code. (Will be described later on)
 
   
-## "codes"
+## codes
 This folder consist of the codes to fit BAO to the above-mentioned contaminated correlation functions:
 
 ### 1- default_config:

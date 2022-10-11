@@ -53,25 +53,24 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   ```
   
   nsim:
-  
-    + The number of simulations (in the exapmle files is 1000)
+  + The number of simulations (in the exapmle files is 1000)
   
   case:
-    + 0: no correction
-    + 1: cross term measured directly from the simulations (not active now)
-    + 8: cross term is calculated from the convolution of the contaminated auto correlation. (Needs to be divided by a prefactor which is a function of fi, that will be fitted in MCMC)
+  + 0: no correction
+  + 1: cross term measured directly from the simulations (not active now)
+  + 8: cross term is calculated from the convolution of the contaminated auto correlation. (Needs to be divided by a prefactor which is a function of fi, that will be fitted in MCMC)
   
   A:
-    + Is the interloper displacement in Mpc/h
+  + Is the interloper displacement in Mpc/h
     
   frac:
-    + This is the true fraction of interlopers, used just for reading the catalogues that are contaminated by fraction "frac".
+  + This is the true fraction of interlopers, used just for reading the catalogues that are contaminated by fraction "frac".
     
   dof_a, dof_q:
-    + Polynomials that need to be used in monopole, and quadrupole respectively. Usually chosen from 1,2,3.
+  + Polynomials that need to be used in monopole, and quadrupole respectively. Usually chosen from 1,2,3.
     
   rsd:
-    + Whether or not measured in redshift space or real space. For redshift space use "rsd", for real space use "norsd".
+  + Whether or not measured in redshift space or real space. For redshift space use "rsd", for real space use "norsd".
     
   #### Output
   
@@ -84,19 +83,14 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   you should see this folder appear: ./Interlopers/rsd_97/mono_case8_1000sims.
   
   And there are three types of files that this code stores at this location:
-  
   + ./frac2_dega3_sims0to999.pdf: Contains the visualizations in a pdf file. 
- 
   + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: These contain the average and standard deviations calculated from the best fit MCMC code. The numbers stored are a1, a2, a3, b, alpha, fi, respectively.
- 
   + ./paper/FINAL_frac2_dega3_dega3_sims0to999.txt: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number is the reduced xi^2.
   
 ### 7- fit_multi.py: (main code for mono+quad)
 
   This is very similar to number 6, with the following changes:
-  
   + Everything is stored in "./Interlopers/rsd_97/**multi**_case8_1000sims"
-  
   + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
 
   ```

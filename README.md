@@ -45,7 +45,7 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
 6- fit_mono.py: (main code for monolope only)
  
   This is the main file to run. 
-  running this in your terminal:
+  You can give this command in your terminal to run the code:
   
   ```
   python3 ./Interlopers/codes/fit_mono.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd

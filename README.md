@@ -21,7 +21,7 @@ Cloning this project would create a folder called ./Interlopers, consisting of t
 ## codes
 This folder consist of the codes to fit BAO to the above-mentioned contaminated correlation functions:
 
-### 1- default_config:
+### 1- default_config.py:
 
   Includes fitting parameters and cosmology parameters used when generating the correlation functions. You can change these parameters according to your correlation functions and the fitting parameters you want to use.
   
@@ -53,31 +53,23 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   ```
   
   nsim:
-    
     + The number of simulations (in the exapmle files is 1000)
   
   case:
-    
     + 0: no correction
-    
     + 1: cross term measured directly from the simulations (not active now)
-    
     + 8: cross term is calculated from the convolution of the contaminated auto correlation. (Needs to be divided by a prefactor which is a function of fi, that will be fitted in MCMC)
   
   A:
-    
     + Is the interloper displacement in Mpc/h
     
   frac:
-  
     + This is the true fraction of interlopers, used just for reading the catalogues that are contaminated by fraction "frac".
     
   dof_a, dof_q:
-    
     + Polynomials that need to be used in monopole, and quadrupole respectively. Usually chosen from 1,2,3.
     
   rsd:
-  
     + Whether or not measured in redshift space or real space. For redshift space use "rsd", for real space use "norsd".
     
   #### Output

@@ -53,6 +53,7 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   ```
   
   nsim:
+  
     + The number of simulations (in the exapmle files is 1000)
   
   case:

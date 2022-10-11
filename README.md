@@ -80,9 +80,8 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   python3 ./Interlopers/codes/fit_mono.py 1000 8 97 2 3 3 0 "rsd"
   ```
   
-  you should see this folder appear: ./Interlopers/rsd_97/mono_case8_1000sims.
+  you should see this folder appear: ./Interlopers/rsd_97/mono_case8_1000sims, which contains three types of files:
   
-  And there are three types of files that this code stores at this location:
   + ./frac2_dega3_sims0to999.pdf: Contains the visualizations in a pdf file. 
   + ./AVG-STD/AVG_frac2_dega3_sims0to999.txt and STD_frac2_dega3_sims0to999.txt: These contain the average and standard deviations calculated from the best fit MCMC code. The numbers stored are a1, a2, a3, b, alpha, fi, respectively.
   + ./paper/FINAL_frac2_dega3_dega3_sims0to999.txt: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number is the reduced xi^2.

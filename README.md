@@ -9,7 +9,8 @@ To clone this project type the following command in your command-line:
 git clone https://github.com/SetarehForoozan/Interlopers.git
 ```
 
-Cloning this project would create a folder called ./Interlopers, consisting of two examplary folders called "rsd_97" and "norsd_85" and a folder called "codes". If you measure your own correlation functions, you need to create another folder here and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders such as ones in rsd_97 below: (In the following we assumed frac = 2 and d = 97 Mpc/h)
+This command would create a folder named "./Interlopers", consisting of two examplary folders: "rsd_97" and "norsd_85". And another folder containing the codes named "codes". 
+If you measure your own correlation functions, you need to create another folder in _./Interlopers_ and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders such as ones in rsd_97 below: (In the following we assumed frac = 2 and d = 97 Mpc/h)
 
 ## rsd_97
 1- CovMats: 

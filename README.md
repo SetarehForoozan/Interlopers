@@ -9,20 +9,20 @@ To clone this project type the following command in your command-line:
 git clone https://github.com/SetarehForoozan/Interlopers.git
 ```
 
-This command would create a folder named "./Interlopers", consisting of two examplary folders: "rsd_97" and "norsd_85". And another folder containing the codes named "codes". 
-If you measure your own correlation functions, you need to create another folder in _./Interlopers_ and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In which you must create two other folders such as ones in rsd_97 below: (In the following we assumed frac = 2 and d = 97 Mpc/h)
+This command would create a folder named _./Interlopers_, consisting of two examplary folders: _rsd_97_ and _norsd_85_. And another folder containing the codes named _codes_. 
+If you measure your own correlation functions, you need to create another folder in _./Interlopers_ and name it in the format of X_Y, where X is either "rsd" or "norsd", and Y is the displacement in Mpc/h. In this folder, you must create two other folders such as ones in _rsd_97_ below: (In the following we assumed frac = 2 and d = 97 Mpc/h)
 
-## rsd_97
+## _rsd_97_
 1- CovMats: 
   
-  + covmat_multi_t_frac_2_nsim1000_0to999.txt: the measured covariance matrix of monopole+quadrupole for fraction 2 and 1000 sims
+  + _covmat_multi_t_frac_2_nsim1000_0to999.txt_: the measured covariance matrix of monopole + quadrupole for fraction 2 and 1000 simulations
   
-  + covmat_t_frac_2_nsim1000.txt: the measured covariance of monopole for fraction 2 and 1000 simulations
+  + _covmat_t_frac_2_nsim1000.txt_: the measured covariance of monopole for fraction 2 and 1000 simulations
 
-2- mean0to999 (sim 0 to sim 999):
-  + poles_t_frac_2.txt: First column must be r, second, third, and forth columns are monopole, quadrupole and hexadecapoles of the measured correlation function.
-  + xi_cross_L0_d97_frac2.txt: First column is r, second column is calculated monopole of the cross correlation from the convolution of the auto correlation, and third column is its error bar.
-  + xi_cross_L2_d97_frac2.txt: Same as above, but for quadupole of the cross correlation.
+2- _mean0to999_ (sim 0 to sim 999):
+  + _poles_t_frac_2.txt_: First column must be r, second, third, and forth columns are monopole, quadrupole and hexadecapoles of the measured correlation function.
+  + _xi_cross_L0_d97_frac2.txt_: First column is r, second column is calculated monopole of the cross correlation from the convolution of the auto correlation, and third column is its error bar.
+  + _xi_cross_L2_d97_frac2.txt_: Same as above, but for quadupole of the cross correlation.
 3- Other folders will be created here as soon as you run the code. (Will be described later on)
 
   

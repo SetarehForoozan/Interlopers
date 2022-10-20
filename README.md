@@ -23,6 +23,7 @@ If you measure your own correlation functions, you need to create another folder
   + _poles_t_frac_2.txt_: First column must be r, second, third, and forth columns are monopole, quadrupole and hexadecapoles of the measured correlation function.
   + _xi_cross_L0_d97_frac2.txt_: First column is r, second column is calculated monopole of the cross correlation from the convolution of the auto correlation, and third column is its error bar.
   + _xi_cross_L2_d97_frac2.txt_: Same as above, but for quadupole of the cross correlation.
+  + 
 3- Other folders will be created here as soon as you run the code. (Will be described later on)
 
   

@@ -1,6 +1,6 @@
-# Interlopers in BAO 
+# Correcting for small-displacement interlopers in BAO analyses
 You can use this code for modelling interlopers in BAO analysis.
-This code was used for generating the results of our paper "Correcting for small-displacement interlopers in BAO analyses".
+This code was used for generating the results of our paper https://arxiv.org/abs/2208.05001.
 
 # Installation
 

@@ -81,7 +81,18 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   rsd:
   + Whether or not measured in redshift space or real space. For redshift space use "rsd", for real space use "norsd".
     
-  #### Output
+    
+### 7- _fit_multi.py_: (main code for mono+quad)
+
+  This is very similar to number 6, with the following changes:
+  + Everything is stored in _./Interlopers/rsd_97/**multi**_case8_1000sims_
+  + _./AVG-STD/AVG_frac2_dega3_sims0to999.txt_ and _STD_frac2_dega3_sims0to999.txt_: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
+
+  ```
+  python3 ./Interlopers/codes/fit_multi.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
+  ```
+  
+  # Test
   
   If you run this code for nsim = 1000, case = 8, A = "97", frac = 2, dof_a = 3, dof_q = 3, and rsd = "rsd",
   
@@ -95,15 +106,7 @@ This folder consist of the codes to fit BAO to the above-mentioned contaminated 
   + _./AVG-STD/AVG_frac2_dega3_sims0to999.txt_ and STD_frac2_dega3_sims0to999.txt: These contain the average and standard deviations calculated from the best fit MCMC code. The numbers stored are a1, a2, a3, b, alpha, fi, respectively.
   + _./paper/FINAL_frac2_dega3_dega3_sims0to999.txt_: The above numbers, but in scientific format to be copied and pasted in your Latex code. The last number is the reduced xi^2.
   
-### 7- _fit_multi.py_: (main code for mono+quad)
 
-  This is very similar to number 6, with the following changes:
-  + Everything is stored in _./Interlopers/rsd_97/**multi**_case8_1000sims_
-  + _./AVG-STD/AVG_frac2_dega3_sims0to999.txt_ and _STD_frac2_dega3_sims0to999.txt_: The numbers stored are a1, a2, a3, b, alpha, fi, **q1, q2, q3, epsilon** respectively.
-
-  ```
-  python3 ./Interlopers/codes/fit_multi.py $nsim $case $A $frac $dof_a $dof_q 0 $rsd
-  ```
 
 For questions you can email me at s2forooz@uwaterloo.ca
   
